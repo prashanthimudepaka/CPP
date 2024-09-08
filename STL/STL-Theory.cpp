@@ -19,6 +19,7 @@ ex:-v1.insert(v1.begin(),5) ..5 is value
 v1.insert(v1.end(),11)
 v1.erase()//it deletes only specific element
 ex:- v1.erase(v1.begin())
+v1.erase(v1.begin(),v1.begin()+2) //range of elemnts erased
 v1.pop_back()//it deletes last element and returns that eleemtn which is deleted
 v1.front()//returns the first element
 v1.back()//returns the last element
