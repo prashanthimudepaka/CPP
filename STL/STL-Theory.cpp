@@ -27,12 +27,14 @@ v1.clear()//it clears all elements in array
 v1.empty()//it checks if element is empty or not
 v1.size()//size of particular vector
 v1.find()
+s.emplace(vec.begin(),3)//instead of insert
 
 2) //SET
+//set stores in sorted order and unique elemnts 
 set<int> s 
 insert()
 begin()
 end()-- next to the last element
 clear()
 find()//search for a element
-
+max_size()
