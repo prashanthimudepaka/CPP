@@ -38,3 +38,15 @@ end()-- next to the last element
 clear()
 find()//search for a element
 max_size()
+
+//3. unordered_set
+it stores all elements in unordered fashion
+//4.MAPS-->associative container
+its a key value pair
+each key is mapped to a value
+every element is stored in  order
+-> empty()
+emplace()
+find()
+max_size()
+
