@@ -26,6 +26,40 @@ int main(){
     {
         cout<<*it<<" ";
     }
+auto it = s.find(10); // Returns iterator to 10
+if (it != s.end()) {
+    cout<<"10 is found\n";
+}
+else{
+    cout<<"element not found\n";
+}
+int n = s.size();  // n = 1 in this case
+cout<<"size:"<<n<<endl;
+if (s.empty()) {
+    cout<<"set is empty\n";
+}
+else{
+    cout<<"set contains elements\n";
+}
+
+
+set<int> st={1,5,20,30};
+auto i = st.lower_bound(20);
+
+    if (i != st.end()) {
+        std::cout << "Lower bound of 20 is: " << *i << std::endl;  // Output: 30//greater than or equal to the value.
+    } else {
+        std::cout << "No element found!" <<endl;
+    }
+cout<<"lower bound: "<<*i;
+auto k = st.upper_bound(5);  //(first element > 20)strictly greater than the value.
+
+
+    if (k != st.end()) {
+        std::cout << "Upper bound of 5 is: " << *k << endl;  
+    } else {
+        std::cout << "No element found!" << std::endl;
+    }
     return 0;
 }
 
