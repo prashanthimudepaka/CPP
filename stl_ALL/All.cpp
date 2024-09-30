@@ -718,7 +718,7 @@ Buckets and Hashing: Like other hash-based containers, it uses a hash function t
 void stackDemo(){
     stack<int> s;
     stack<int> s1;
-    stack<int> s2;
+    stack<int> s2; 
     s.push(1);
     s.push(2);
     s.push(3);

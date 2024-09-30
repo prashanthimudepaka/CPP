@@ -3,14 +3,12 @@ using namespace std;
 int main(){
   
     vector<int> vec;
-    
-    
     vec.assign(5, 10);
-     for (int i : vec) {
+     for (int i : vec) 
+     {
         cout << i << " ";
-    }
-vector<int> a = {11,12,13,14,15};
-    vector<int> b={6,7,8,9,10};
+     }
+    
     vector<int> vec1 = {1, 2, 3, 4, 5};
     vector<int> vec2;
 
@@ -20,11 +18,15 @@ vector<int> a = {11,12,13,14,15};
 
    
 cout<<"copy of one vector to other"<<"\n";
-    for (int i : vec1) {
+    for (int i : vec2) {
         cout << i << " ";
     }
 //2
+ vec1.insert(vec1.begin(),11);
+
  vec1.emplace_back(6);
+ vec1.erase(vec1.begin());
+ vec1.erase(vec1.end());
 vec1.emplace_back(7);
 vec1.emplace_back(8);
 vec1.emplace_back(9);
@@ -50,8 +52,16 @@ cout<<"elemnts after emplace"<<"\n";
         cout << i << " ";
     }
    //10
+   vector<int> a = {11,12,13,14,15};
+    vector<int> b={6,7,8,9,10};
     a.swap(b);
-    cout<<"elements after swap\n";
+    
+    cout<<"elements after swap a elements are \n";
+     for (int i : a) {
+        cout << i << " ";
+    }
+    cout<<"elements after swap B elements are \n";
+
      for (int i : b) {
         cout << i << " ";
     }
@@ -73,6 +83,7 @@ cout<<"elemnts after emplace"<<"\n";
    else{
     cout<<"not found 5"<<endl;
    }
+   
     return 0;
 }
 

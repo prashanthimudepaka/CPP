@@ -14,10 +14,10 @@ int main(){
 
    if(s.count(12)>0)
    {
-    cout<<"12 is present";
+    cout<<"\n12 is present";
    }
    else{
-    cout<<"12 not present";
+    cout<<"\n12 not present";
    }
    cout<<"size="<<s.size()<<endl;
    cout<<s.max_size();
@@ -33,7 +33,7 @@ if (it != s.end()) {
 else{
     cout<<"element not found\n";
 }
-int n = s.size();  // n = 1 in this case
+int n = s.size();  
 cout<<"size:"<<n<<endl;
 if (s.empty()) {
     cout<<"set is empty\n";
@@ -51,7 +51,7 @@ auto i = st.lower_bound(20);
     } else {
         std::cout << "No element found!" <<endl;
     }
-cout<<"lower bound: "<<*i;
+
 auto k = st.upper_bound(5);  //(first element > 20)strictly greater than the value.
 
 

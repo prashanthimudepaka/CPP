@@ -8,7 +8,7 @@ int main(){
     if(age>18){
         cout<<"eligible for voting";
     }
-    if(age==18){
+     else if(age==18){
         char a;
         cout<<"did you applied:y/n";
         cin>>a;
@@ -20,6 +20,7 @@ int main(){
             
         }
     }
+    
     else {
         cout<<"you are not eligible";
     }

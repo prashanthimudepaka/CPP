@@ -1,0 +1,103 @@
+
+PATTERNS:
+1.
+****
+****
+****
+****
+2.
+*
+**
+***
+****
+3.
+
+1
+12
+123
+1234
+12345
+
+4.
+
+1
+22
+333
+4444
+
+5.
+****
+***
+**
+*
+
+6.
+12345
+1234
+123
+12
+1
+
+1. **Find the Largest Element**: Given an array `arr`, the task is to find the largest element in it.
+
+2. **Remove Duplicates from Sorted Array**: Given an integer array sorted in non-decreasing order, remove the duplicates in place such that each unique element appears only once. The relative order of the elements should be kept the same. If there are `k` elements after removing the duplicates, then the first `k` elements of the array should hold the final result. It does not matter what you leave beyond the first `k` elements.
+
+3. **Left Rotate the Array by One Place**: Given an array of `N` integers, left rotate the array by one place.
+
+4. **Find the Missing Number**: Given an integer `N` and an array of size `N-1` containing `N-1` numbers between `1` to `N`, find the number (between `1` to `N) that is not present in the given array.
+
+5. **Find the Union of Two Sorted Arrays**: Given two sorted arrays, `arr1` and `arr2` of size `n` and `m`, find the union of two sorted arrays. The union of two arrays can be defined as the common and distinct elements in the two arrays. **Note**: Elements in the union should be in ascending order.
+
+6. **Maximum Consecutive Ones**: Given an array that contains only `1` and `0`, return the count of maximum consecutive ones in the array.
+
+7. **Find the Single Number**: Given a non-empty array of integers `arr`, every element appears twice except for one. Find that single one.
+
+8. **Sort an Array of 0s, 1s, and 2s**: Given an array consisting of only `0`s, `1`s, and `2`s, write a program to in-place sort the array without using inbuilt sort functions. (Expected: Single pass `O(N)` and constant space).
+
+9. **sorted or not**: Given an array of size n, write a program to check if the 
+given array is sorted in (ascending / Increasing / Non-decreasing) 
+order or not. 
+
+10. Given an array of N integers, write a program to return an element that occurs more than N/2 times in the given array. You may consider that such an element always exists in the array.
+input: n=7 ar=[2 2 1 1 2 2 1]
+ 
+ 11.Given an integer array arr, find the contiguous subarray (containing at least one number) which
+has the largest sum and returns its sum and prints the subarray.
+input: ar=[1,2,3] 
+sub:
+[[1],[1,2],[1,2,3],[2],[2,3],[3]]
+vector<vector<int>> v={{},{}};
+for(int i=0;i<n;i++)
+{
+      for(int j=i;j<n;j++)
+      {
+        for(int k=i;k<=j;k++)
+        {
+        }
+         
+      }
+}
+/*1 2 3
+
+i=0
+j=0 ->2
+k= i->j
+[1]
+j=1
+k=0-1
+1 2
+
+j=2
+
+k=0-2
+1 2 3
+
+i=1
+j=1->2
+k=1->1
+2
+j=2->2
+k=1-2
+2 3
+
+*/

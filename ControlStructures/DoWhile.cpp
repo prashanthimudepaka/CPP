@@ -6,8 +6,7 @@ int main(){
     {
         cout<<n<<"\n";
         n++;
-    }
-    while(n>0); 
+    }while(n>0); 
     cout<<"n="<<n;   
     return 0;
 }
