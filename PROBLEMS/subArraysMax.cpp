@@ -1,4 +1,45 @@
+/*#include <iostream>
+#include <vector>
 
+using namespace std;
+
+// Function to find and print the maximum sum subarray
+void maxSumSubarray(const vector<int>& arr) {
+    int maxSum = arr[0]; // Initialize maximum sum
+    int currentSum = arr[0]; // Initialize current sum
+    int start = 0, end = 0, tempStart = 0; // Indices for subarrays
+
+    for (int i = 1; i < arr.size(); i++) {
+        currentSum += arr[i];
+
+        // If the current element is greater than currentSum, start a new subarray
+        if (arr[i] > currentSum) {
+            currentSum = arr[i];
+            tempStart = i; // Update temp start
+        }
+
+        // Update maximum sum and the indices
+        if (currentSum > maxSum) {
+            maxSum = currentSum;
+            start = tempStart; // Update start index
+            end = i; // Update end index
+        }
+    }
+
+    // Print the maximum sum subarray and its sum
+    cout << "Maximum sum subarray: ";
+    for (int i = start; i <= end; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << "\nMaximum sum: " << maxSum << endl;
+}
+
+int main() {
+    vector<int> arr = {1, -2, 3, 4, -1, 2, 1, -5, 4}; // Example array
+    maxSumSubarray(arr); // Call the function
+    return 0;
+}
+*/
 
 
 
