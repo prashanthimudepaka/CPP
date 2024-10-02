@@ -100,7 +100,28 @@ k=0-1
                   if (ar[i]<ar[j])
                   p=ar[j]-ar[i]
                   maxi=max(maxi,p)
+13. There’s an array ‘A’ of size ‘N’ with an equal number of positive and
+ negative elements. Without altering the relative order of positive and negative elements, 
+ you must return an array of alternately positive and negative values.
 
 
-              
-               
+Note: Start the array with positive elements.
+
+14.Given an array Arr[] of integers, rearrange the numbers of the given array into the 
+lexicographically next greater permutation of numbers.
+If such an arrangement is not possible, it must rearrange to the
+ lowest possible order (i.e., sorted in ascending order).
+ v=[10,20,30]
+ 10 20 30
+ 10 30 20
+ 20 10 30
+ 20 30 10
+ 30 10 20
+ 30 20 10
+
+
+ 
+
+ 
+
+
