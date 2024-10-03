@@ -45,46 +45,46 @@ int main() {
 
 
 
-#include<bits/stdc++.h>
-using namespace std;
-int main()
-{
-    unordered_map<int,int> mp;
-  vector<int> arr = {1, 2, 3};  // Example input array
-    int n = arr.size();
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     unordered_map<int,int> mp;
+//   vector<int> arr = {1, 2, 3};  // Example input array
+//     int n = arr.size();
   
-int sum;
-    // Vector to store all subarrays
-    vector<vector<int>> v;
-    vector<int> s;
-    int maxi=0;
-    // Generate all subarrays
-    for (int i = 0; i < n; i++) {
-        for (int j = i; j < n; j++) {
-            vector<int> subarray;
-              sum=0;
-            // Collect elements for the current subarray
-            for (int k = i; k <= j; k++) {
-                subarray.push_back(arr[k]);
-                sum=sum+arr[k];
+// int sum;
+//     // Vector to store all subarrays
+//     vector<vector<int>> v;
+//     vector<int> s;
+//     int maxi=0;
+//     // Generate all subarrays
+//     for (int i = 0; i < n; i++) {
+//         for (int j = i; j < n; j++) {
+//             vector<int> subarray;
+//               sum=0;
+//             // Collect elements for the current subarray
+//             for (int k = i; k <= j; k++) {
+//                 subarray.push_back(arr[k]);
+//                 sum=sum+arr[k];
                 
-            }
-            // Adding the subarray to the vector of vectors
-            v.push_back(subarray);
-            mp[sum]=v.size()-1;
-            maxi=max(sum,maxi);
+//             }
+//             // Adding the subarray to the vector of vectors
+//             v.push_back(subarray);
+//             mp[sum]=v.size()-1;
+//             maxi=max(sum,maxi);
             
-        }
-    }
-      // cout<<"maximum sum:- "<<maxi<<" "<<v[mp[maxi]];
-       for(auto i:mp)
-       {
-           cout<<i.first<<"  "<<i.second<<endl;
-       }
+//         }
+//     }
+//       // cout<<"maximum sum:- "<<maxi<<" "<<v[mp[maxi]];
+//        for(auto i:mp)
+//        {
+//            cout<<i.first<<"  "<<i.second<<endl;
+//        }
 
    
-    return 0;
-}
+//     return 0;
+// }
 /*
 int main()
 {

@@ -119,9 +119,16 @@ If such an arrangement is not possible, it must rearrange to the
  30 10 20
  30 20 10
 
+15. Given an array of integers and an integer k, return the total number of subarrays whose sum equals k.
+A subarray is a contiguous non-empty sequence of elements within an array.
 
- 
+16. Given an array of N integers. Find the elements that appear more 
+than N/3 times in the array. If no such element exists, return an empty vector.
 
+ 17. Given an array of N integers, your task is to find unique triplets that add up to give a sum of zero. In short, you need to return an array of all the unique
+  triplets [arr[a], arr[b], arr[c]] such that i!=j, j!=k, k!=i, and their sum is equal to zero.
+  
+18.
  
 
 
