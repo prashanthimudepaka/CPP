@@ -66,10 +66,11 @@ int findfirst(vector<int> v, int target)
 int main()
 {
     vector<int> v={0,0,3,3,3,9,10};
-    int t=9;
-    
+    int t=3;
+   int count=0; 
    pair<int,int> p=firstandlast(v,t);
    cout<<"first Occurence="<<p.first<<" last occurance="<<p.second;
-
+   count=(p.second-p.first)+1;
+   cout<<"count="<<count;
     return 0;
 }
