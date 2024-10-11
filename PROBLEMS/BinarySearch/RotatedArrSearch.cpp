@@ -16,6 +16,7 @@ int findK(vector<int> nums, int target)
         while(l<=h)
         {
             mid=(l+h)/2;
+            
             if(nums[mid]==target)
             {
                 return mid;
@@ -41,7 +42,7 @@ int findK(vector<int> nums, int target)
 
     return -1;
 }
-// 10 20 25  50  1  2  3  4   5
+// 10, 20 , 25,  50,  1,  2,  3,  4,   5
 // 0  1   2  3   4  5  6  7  8
 
 // 4  5  10  20 25  50  1  2 3 
@@ -49,12 +50,12 @@ int findK(vector<int> nums, int target)
 // 4 < 25
  //h 
 
-
+// 4 5 6 7 0 1 2
 
 int main()
 {
-    vector<int> v={4,  5 , 10 , 20, 25,  50,  1,  2, 3 };
-    int target=4;
+    vector<int> v={10, 20 , 25, 50, 1,  2,  3  ,4 };
+    int target=3;
     int x=findK(v,target);
     if(x!=-1)
     {
