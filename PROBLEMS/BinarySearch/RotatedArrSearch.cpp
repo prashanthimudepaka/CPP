@@ -23,13 +23,10 @@ int findK(vector<int> nums, int target)
             }
             if(nums[l]<=nums[mid])
             {
-            if(nums[l]<=target && target<nums[mid])
+            if(nums[l]<=target && target<=nums[mid])
                  h=mid-1;
                 else
-                l=mid+1;
-            
-              
-                 
+                l=mid+1;     
             }   
             else
             {
@@ -39,8 +36,8 @@ int findK(vector<int> nums, int target)
                 h=mid-1;
             }        
         }
-
-    return -1;
+        
+         return -1;
 }
 // 10, 20 , 25,  50,  1,  2,  3,  4,   5
 // 0  1   2  3   4  5  6  7  8
@@ -51,18 +48,15 @@ int findK(vector<int> nums, int target)
  //h 
 
 // 4 5 6 7 0 1 2
-
 int main()
 {
-    vector<int> v={10, 20 , 25, 50, 1,  2,  3  ,4 };
+    vector<int> v={5,1,3};
     int target=3;
     int x=findK(v,target);
     if(x!=-1)
     {
         cout<<"found element at :"<<x;
     }
-   
-
     return 0;
 }
 /*10 20 25 50 1 2 3 4 5    val=20
@@ -79,12 +73,4 @@ l=5
 mid=6
 3==target
 return 6
-
-
-
-
-
-
-
-
  */
