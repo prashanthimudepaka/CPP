@@ -47,7 +47,7 @@ int main()
     int x=findK(v);
     
     
-        cout<<"found element at :"<<x;
+        cout<<x;
    
 
     return 0;
