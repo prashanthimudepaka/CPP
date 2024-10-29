@@ -11,7 +11,13 @@ int main(){
     {
         cout<<*it<<" ";
     }
-
+    s.erase(s.begin());
+    cout<<"elements in vector"<<endl;
+    for(auto it=s.begin();it!=s.end();it++)
+    {
+        cout<<*it<<" ";
+    }
+/*
    if(s.count(12)>0)
    {
     cout<<"\n12 is present";
@@ -59,7 +65,7 @@ auto k = st.upper_bound(5);  //(first element > 20)strictly greater than the val
         std::cout << "Upper bound of 5 is: " << *k << endl;  
     } else {
         std::cout << "No element found!" << std::endl;
-    }
+    }*/
     return 0;
 }
 
