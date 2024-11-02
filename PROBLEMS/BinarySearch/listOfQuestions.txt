@@ -88,7 +88,9 @@ Explanation:
 
 
 
-9) Given an array of length N. Peak element is defined as the element greater than both of its neighbors. Formally, if 'arr[i]' is the peak element, 'arr[i - 1]' < 'arr[i]' and 'arr[i + 1]' < 'arr[i]'. Find the index(0-based) of a peak element in the array. If there are multiple peak numbers, 
+9) Given an array of length N. Peak element is defined as the element greater than both of its neighbors. Formally, 
+if 'arr[i]' is the peak element, 'arr[i - 1]' < 'arr[i]' and 'arr[i + 1]' < 'arr[i]'.
+ Find the index(0-based) of a peak element in the array. If there are multiple peak numbers, 
 return the index of any peak number
 Example 1:
 Input Format: arr[] = {1,2,3,4,5,6,7,8,5,1}
@@ -162,6 +164,183 @@ Explanation:
  If Koko eats 25 bananas/hr, he will take 1, 1, 1, 1, and 1 hour to eat the piles accordingly.
   So, he will take 5 hours to complete all the piles
 
+12)You are given 'N’ roses and you are also given an array 'arr'  where 'arr[i]'  
+denotes that the 'ith' rose will bloom on the 'arr[i]th' day.
+You can only pick already bloomed roses that are adjacent to make a bouquet. 
+You are also told that you require exactly 'k' adjacent bloomed roses to make a single bouquet.
+Find the minimum number of days required to make at least ‘m' bouquets each containing 'k'
+ roses. Return -1 if it is not possible.
+
+ Example 1:
+Input Format:
+ N = 8, arr[] = {7, 7, 7, 7, 13, 11, 12, 7}, m = 2, k = 3
+Result:
+ 12
+Explanation:
+ On the 12th the first 4 flowers and the last 3 flowers would have already bloomed. So, 
+ we can easily make 2 bouquets, 
+ one with the first 3 and another with the last 3 flowers.
+
+Example 2:
+Input Format:
+ N = 5, arr[] = {1, 10, 3, 10, 2}, m = 3, k = 2
+Result:
+ -1
+Explanation:
+ If we want to make 3 bouquets of 2 flowers each, we need at least 6 flowers. But we are given only 5 
+ flowers, so, we cannot make the bouquets.
 
 
+13) You are given an array of integers 'arr' and an integer i.e. a threshold value 'limit'. 
+Your task is to find the smallest positive integer divisor, such that upon dividing all the elements of the 
+given array by it, the sum of the division's result is less than or equal to the given threshold value.
+Example 1:
+Input Format:
+ N = 5, arr[] = {1,2,3,4,5}, limit = 8
+Result:
+ 3
+Explanation:
+ We can get a sum of 15(1 + 2 + 3 + 4 + 5) if we choose 1 as a divisor. 
+The sum is 9(1 + 1 + 2 + 2 + 3)  if we choose 2 as a divisor. Upon 
+dividing all the elements of the array by 3, we get 1,1,1,2,2 respectively. 
+Now, their sum is equal to 7 <= 8 i.e. the threshold value. So, 3 is the minimum possible answer.
 
+Example 2:
+Input Format:
+ N = 4, arr[] = {8,4,2,3}, limit = 10
+Result:
+ 2
+Explanation:
+ If we choose 1, we get 17 as the sum. If we choose 2, we get 9(4+2+1+2) <= 10 as the answer. So, 2 is the answer.
+
+14) You are the owner of a Shipment company. You use conveyor belts to ship
+ packages from one port to another. The packages must be shipped within 'd' days.
+The weights of the packages are given in an array 'of weights'. The packages are 
+loaded on the conveyor belts every day in the same order as they appear in the array.
+ The loaded weights must not exceed the maximum weight capacity of the ship.
+Find out the least-weight capacity so that you can ship all the packages within 'd' days.
+Example 1:
+Input Format:
+ N = 5, weights[] = {5,4,5,2,3,4,5,6}, d = 5
+Result:
+ 9
+Explanation:
+ If the ship capacity is 9, the shipment will be done in the following manner:
+Day         Weights            Total
+1        -       5, 4          -        9
+2        -       5, 2          -        7
+3        -       3, 4          -        7
+4        -       5              -        5
+5        -       6              -        6
+So, the least capacity should be 9.
+
+Example 2:
+Input Format:
+ N = 10, weights[] = {1,2,3,4,5,6,7,8,9,10}, d = 1
+Result:
+ 55
+Explanation:
+ We have to ship all the goods in a single day. So, the weight capacity should be the summation of all the weights i.e. 55.
+
+
+14)You are given a strictly increasing array ‘vec’ 
+and a positive integer 'k'. Find the 'kth' positive integer missing from 'vec'.
+Example 1:
+Input Format:
+ vec[]={4,7,9,10}, k = 1
+Result:
+ 1
+Explanation:
+ The missing numbers are 1, 2, 3, 5, 6, 8, 11, 12, ……, and so on. Since 'k' 
+ is 1, the first missing element is 1.
+Example 2:
+Input Format:
+ vec[]={4,7,9,10}, k = 4
+Result:
+ 5
+Explanation:
+ The missing numbers are 1, 2, 3, 5, 6, 8, 11, 12, ……, and so on. Since 'k' is 4, the fourth missing element is 5.
+
+imp 
+15)You are given an array 'arr' of size 'n' which denotes the position of stalls.
+You are also given an integer 'k' which denotes the number of aggressive cows.
+You are given the task of assigning stalls to 'k' cows such that the minimum distance 
+between any two of them is the maximum possible.
+Find the maximum possible minimum distance.
+Example 1:
+Input Format:
+ N = 6, k = 4, arr[] = {0,3,4,7,10,9}
+Result:
+ 3
+Explanation:
+ The maximum possible minimum distance between any two cows will be 3 when 4 cows are
+  placed at positions {0, 3, 7, 10}. Here the distances between cows are 3, 4, and 3
+   respectively. We cannot make the minimum distance greater than 3 in any ways.
+Example 2:
+Input Format:
+ N = 5, k = 2, arr[] = {4,2,1,3,6}
+Result:
+ 5
+Explanation:
+ The maximum possible minimum distance between any two cows will be 5 when 2 cows are placed at positions {1, 6}.
+/*
+0 3 4 7 10 9
+0 3 4 7 9 10
+max possible minimum distance bw tw0
+
+0 3 7 10   k=4
+ 3 4 3     min=3
+0 3 4 7
+ 3 1 3     min=1
+
+0 4 9 10
+ 4 5 1    min=1
+         max(min)
+
+h=max(v)-min(v);
+
+4 7 10 9
+1 2 3 4
+ 3 3  1
+  2
+min=1
+0  3  4  7  9  10
+c1 c2 c3 c4
+
+0  3  4  7  9  10
+c1 c2    c3 c4
+
+0  3  4  7  9  10
+c1 c2    c3    c4
+
+0  3   4   7  9  10
+c1     c2        c3     
+
+
+*/
+
+ 16)
+ Given an array ‘arr of integer numbers, ‘ar[i]’ represents the number of pages in the ‘i-th’ book. There are a ‘m’ number of students, 
+ and the task is to allocate all the books to the students.
+Allocate books in such a way that:
+
+Each student gets at least one book.
+Each book should be allocated to only one student.
+Book allocation should be in a contiguous manner.
+You have to allocate the book to ‘m’ students such that the maximum number of pages assigned
+ to a student is minimum. If the allocation of books is not possible. return -1
+
+ Example 1:
+Input Format:
+ n = 4, m = 2, arr[] = {12, 34, 67, 90}
+Result:
+ 113
+Explanation:
+ The allocation of books will be 12, 34, 67 | 90. One student will get the first 3 books and the other will get the last one.
+
+Example 2:
+Input Format:
+ n = 5, m = 4, arr[] = {25, 46, 28, 49, 24}
+Result:
+ 71
+Explanation: The allocation of books will be 25, 46 | 28 | 49 | 24.
