@@ -22,6 +22,7 @@ ex:
 inp: 0 0 1 2 3 4 
 x=0 
 0 1
+
 5) Given an integer array arr of size N, sorted in
  ascending order (with distinct values) and a target value k. Now the array is rotated at 
 some pivot point unknown to you. Find the index at which k is present and if k is not present return -1.
@@ -30,11 +31,13 @@ inp: 10 20 30 40 0 3 5 7 9
      0  1   2  3  4  5  6 7
      10 1 2 3 4 5 6 7 8 9
      0  1 2 3 4 5 6 7 8 9
+
 6) Given an integer array arr of size N, sorted in ascending order (with distinct
  values).
  Now the array is rotated between 
 1 to N times which is unknown. Find the minimum element in the array.
 10 20 30 40 50 60
+
 
 7) Given an integer array arr of size N, sorted in ascending order 
 (with distinct values).
@@ -137,15 +140,14 @@ Explanation:
  Square root of 28 is approximately 5.292. So, the floor value will be 5.
 
 
-11) A monkey is given ‘n’ piles of bananas, whereas the 'ith' pile has ‘a[i]’ bananas. An integer ‘h’ is also given, 
+11) A monkey is given ‘n’ piles of bananas, whereas the 'ith' pile has ‘a[i]’ bananas. An integer ‘h’ is 
+also given, 
 which denotes the time (in hours) for all the bananas to be eaten.
 
 Each hour, the monkey chooses a non-empty pile of bananas and eats ‘k’ bananas. If the pile 
 contains less than ‘k’ bananas, then the monkey consumes all the bananas and won’t eat any more bananas
  in that hour.w
-
 Find the minimum number of bananas ‘k’ to eat per hour so that the monkey can eat all the bananas within ‘h’ hours.
-
 Example 1:
 Input Format:
  N = 4, a[] = {7, 15, 6, 3}, h = 8
