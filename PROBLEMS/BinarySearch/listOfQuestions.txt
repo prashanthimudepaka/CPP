@@ -245,7 +245,7 @@ Explanation:
  We have to ship all the goods in a single day. So, the weight capacity should be the summation of all the weights i.e. 55.
 
 
-14)You are given a strictly increasing array ‘vec’ 
+15)You are given a strictly increasing array ‘vec’ 
 and a positive integer 'k'. Find the 'kth' positive integer missing from 'vec'.
 Example 1:
 Input Format:
@@ -264,7 +264,7 @@ Explanation:
  The missing numbers are 1, 2, 3, 5, 6, 8, 11, 12, ……, and so on. Since 'k' is 4, the fourth missing element is 5.
 
 imp 
-15)You are given an array 'arr' of size 'n' which denotes the position of stalls.
+16)You are given an array 'arr' of size 'n' which denotes the position of stalls.
 You are also given an integer 'k' which denotes the number of aggressive cows.
 You are given the task of assigning stalls to 'k' cows such that the minimum distance 
 between any two of them is the maximum possible.
@@ -321,8 +321,9 @@ c1     c2        c3
 
 */
 
- 16)
- Given an array ‘arr of integer numbers, ‘ar[i]’ represents the number of pages in the ‘i-th’ book. There are a ‘m’ number of students, 
+ 17)
+ Given an array ‘arr of integer numbers, ‘ar[i]’ represents the number of pages in the ‘i-th’ book. 
+ There are a ‘m’ number of students, 
  and the task is to allocate all the books to the students.
 Allocate books in such a way that:
 
@@ -335,6 +336,7 @@ You have to allocate the book to ‘m’ students such that the maximum number o
  Example 1:
 Input Format:
  n = 4, m = 2, arr[] = {12, 34, 67, 90}
+                       
 Result:
  113
 Explanation:

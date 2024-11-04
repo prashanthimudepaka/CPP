@@ -18,8 +18,10 @@ int upperBound(vector<int>arr,int value)
             left=mid+1;
         }
     }
+    
+
     return ans;
-     
+    
 }
 
 int main() {

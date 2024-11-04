@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 bool canplace(vector<int> arr, int mid,int students)
-{
+{//
     int sum=0;
     int countst=1;
     for(int i=1;i<arr.size();i++)
@@ -12,9 +12,6 @@ bool canplace(vector<int> arr, int mid,int students)
         }
         else{
             countst++;
-            if(countst>=students)
-            return true;
-
         }
     }
     return false;
