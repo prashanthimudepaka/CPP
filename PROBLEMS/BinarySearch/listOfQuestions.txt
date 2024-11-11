@@ -466,3 +466,98 @@ Input: k = 7, arr1[] = [100, 112, 256, 349, 770], arr2[] = [72, 86, 113, 119, 26
 Output: 256
 Explanation: Combined sorted array is - 72, 86, 100, 112, 113, 119, 256, 265, 349, 445, 770, 892.
  7th element of this array is 256.
+
+ 23) You have been given a non-empty grid ‘mat’ with 'n' rows and 'm' columns 
+ consisting of only 0s and 1s. All the rows are sorted in ascending order.
+Your task is to find the index of the row with the maximum number of ones.
+
+Note: If two rows have the same number of ones, consider the one with a smaller index.
+ If there's no row with at least 1 zero, return -1.
+ Example 1:
+Input Format:
+ n = 3, m = 3, 
+mat[] = 
+1 1 1
+0 0 1
+0 0 0
+Result:
+ 0
+Explanation:
+ The row with the maximum number of ones is 0 (0 - indexed).
+
+Example 2:
+Input Format:
+ n = 2, m = 2 , 
+mat[] = 
+0 0
+0 0
+Result:
+ -1
+Explanation:
+  The matrix does not contain any 1. So, -1 is the answer.
+
+ 24)
+ You have been given a 2-D array 'mat' of size 'N x M' where 'N' and 'M' denote the 
+ number of rows and columns, respectively. The elements of each row are sorted in non-decreasing order. Moreover, the first element of a row is greater than the last element of the previous row (if it exists). You are given an integer ‘target’, 
+ and your task is to find if it exists in the given 'mat' or not.
+ Example 1:
+Input Format:
+ N = 3, M = 4, target = 8,
+mat[] = 
+1 2 3 4
+5 6 7 8 
+9 10 11 12
+Result:
+ true
+Explanation:
+ The ‘target’  = 8 exists in the 'mat' at index (1, 3).
+
+Example 2:
+Input Format:
+ N = 3, M = 3, target = 78,
+mat[] = 
+1 2 4
+6 7 8 
+9 10 34
+Result:
+ false
+Explanation:
+ The ‘target' = 78 does not exist in the 'mat'. Therefore in the output, we see 'false'.
+ Example 1:
+Input Format:
+ N = 3, M = 4, target = 8,
+mat[] = 
+1 2 3 4
+5 6 7 8 
+9 10 11 12
+Result:
+ true
+Explanation:
+ The ‘target’  = 8 exists in the 'mat' at index (1, 3).
+
+Example 2:
+Input Format:
+ N = 3, M = 3, target = 78,
+mat[] = 
+1 2 4
+6 7 8 
+9 10 34
+Result:
+ false
+Explanation:
+ The ‘target' = 78 does not exist in the 'mat'. Therefore in the output, we see 'false'.
+
+
+ 25)
+ Write an efficient algorithm that searches for a value target in an m x n integer matrix matrix. 
+ This matrix has the following properties:
+
+Integers in each row are sorted in ascending from left to right.
+Integers in each column are sorted in ascending from top to bottom.
+Input: matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 5
+Output: true
+
+Input: matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 20
+Output: false
+
+26) first and last occurences of a elemnt 

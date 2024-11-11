@@ -53,7 +53,7 @@ int numberOfGasStationsRequired(long double dist, vector<int> &arr) {
 long double minimiseMaxDistance(vector<int> &arr, int k) {
     int n = arr.size(); // size of the array
     long double low = 0;
-    long double high = 0;
+    long double high = 0;  
 
     //Find the maximum distance:
     for (int i = 0; i < n - 1; i++) {
