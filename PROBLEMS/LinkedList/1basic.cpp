@@ -35,13 +35,15 @@ int main()
     ob2->next=ob3;
     ob3->next=ob4;
     ob4->next=ob5;
+    int count=0;
     while(head!=nullptr)
     {
         cout<<head->data<<endl;
+        count++;
         head=head->next;
 
     }
-
+cout<<count<<" is the length of linked list";
      return 0;
 
 }

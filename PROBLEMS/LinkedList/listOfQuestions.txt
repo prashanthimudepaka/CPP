@@ -1,0 +1,8 @@
+1) basic single linked list syntax 
+2) length of linked list
+3) inserting an element at begin
+4) insert at the end
+5) delete an element at begin
+6) delete an element at end
+7) double linked list
+8) Search for an element
