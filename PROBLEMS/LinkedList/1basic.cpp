@@ -42,13 +42,19 @@ int main()
 
     }
 
-
-
-
-    return 0;
+     return 0;
 
 }
 
+/*
+1. length of linked list
+2. inserting an element at begin
+3. insert at the end
+4. delete an element at begin
+5. delete an element at end
+6.Search for an element
+7. double linked list
+*/
 /*
 
 class Node{
