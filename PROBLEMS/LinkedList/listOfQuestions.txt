@@ -6,3 +6,11 @@
 6) delete an element at end
 7) double linked list
 8) Search for an element
+9) dll similar operations
+10)reverse sll
+11)Given the head of a linked list of integers, determine the middle node of 
+the linked list. However, if the linked list has an even number of nodes, return the second middle node
+ex1: 1 2 3 4 5 6 7
+           s 
+                 f 
+                 

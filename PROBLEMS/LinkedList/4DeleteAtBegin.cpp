@@ -37,13 +37,11 @@ int main()
     head=ob5;
     head->next=ob4;
     int n=1;
-    while(n>0){
 
+    if(head!=nullptr)
+         head=head->next;
     
-    head->next=nullptr;
-    head=ob4;
-n--;
-    }
+    
 
     while(head!=nullptr)
     {

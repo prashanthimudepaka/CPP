@@ -31,13 +31,15 @@ int main()
     ob2->next=ob3;
     ob3->next=ob4;
     ob4->next=ob5;
+    int count=0;
     while(head!=nullptr)
     {
+        count++;
         cout<<head->data<<endl;
         head=head->next;
 
     }
-
+    cout<<count;
      return 0;
 
 }

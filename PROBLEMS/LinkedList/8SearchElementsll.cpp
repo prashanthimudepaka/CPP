@@ -43,11 +43,7 @@ int main()
         }
        
        
-    if(head->next==nullptr)
-    {
-           cout<<value<<" not found";
-           break;
-    }
+    
      head=head->next;
     }
  
