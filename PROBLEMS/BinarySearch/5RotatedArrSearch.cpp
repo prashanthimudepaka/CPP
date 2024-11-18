@@ -21,14 +21,16 @@ int findK(vector<int> nums, int target)
             {
                 return mid;
             }
+            // value(l)<value(mid)
             if(nums[l]<=nums[mid])
             {
+             //l<target<mid   
             if(nums[l]<=target && target<=nums[mid])
                  h=mid-1;
                 else
                 l=mid+1;     
             }   
-            else
+            else //value(mid)<target<value(h)
             {
                 if(nums[mid]<=target && target<=nums[h])
                  l=mid+1;

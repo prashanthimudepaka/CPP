@@ -17,7 +17,10 @@ int findK(vector<int> nums)
         while(l<=h)
         {
             mid=(l+h)/2;
-            
+             if (nums[l] <= nums[h]) {
+                m = min(m, nums[l]);
+            break;
+        }
            
             if(nums[l]<=nums[mid])
             {

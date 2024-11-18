@@ -192,7 +192,8 @@ Explanation:
  If we want to make 3 bouquets of 2 flowers each, we need at least 6 flowers. But we are given only 5 
  flowers, so, we cannot make the bouquets.
 
-
+//similar question 2064. Minimized Maximum of Products Distributed to Any Store
+https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/?envType=daily-question&envId=2024-11-14
 13) You are given an array of integers 'arr' and an integer i.e. a threshold value 'limit'. 
 Your task is to find the smallest positive integer divisor, such that upon dividing all the elements of the 
 given array by it, the sum of the division's result is less than or equal to the given threshold value.
