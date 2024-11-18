@@ -21,7 +21,12 @@ int findK(vector<int> nums)
                 m = min(m, nums[l]);
             break;
         }
-           
+           /*If arr[low] <= arr[mid]: This condition ensures that the left 
+           part is sorted. So, we will pick the leftmost element i.e. 
+           arr[low]. Now, we will compare it with 'ans' and update 'ans' 
+           with the smaller value (i.e., min(ans, 
+           arr[low])). Now, we will eliminate this left half(i.e. 
+           low = mid+1*/
             if(nums[l]<=nums[mid])
             {
                  m=min(m,nums[l]);
@@ -29,8 +34,7 @@ int findK(vector<int> nums)
 
             }
              
-              
-            else
+             else
             {
                  m=min(nums[mid], m);
                  h=mid-1;
