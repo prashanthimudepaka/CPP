@@ -28,10 +28,9 @@ Node* reverseList(Node* head) {
         current = next;
     }
 
-    return prev;  // prev will be the new head of the reversed list
-}
+    return prev;  
 
-// Function to print the singly linked list
+
 void printList(Node* head) {
     Node* current = head;
     while (current != nullptr) {
@@ -42,7 +41,7 @@ void printList(Node* head) {
 }
 
 int main() {
-    // Creating a simple singly linked list: 1 -> 2 -> 3 -> 4 -> 5
+    
     Node* head = new Node(1);
     head->next = new Node(2);
     head->next->next = new Node(3);
