@@ -19,9 +19,9 @@ int findK(vector<int> nums)
             mid=(l+h)/2;
             
            
-            if(nums[l]>=nums[mid])
+            if(nums[h]>=nums[mid])
             {
-                 m=max(m,nums[l]);
+                 m=max(m,nums[h]);
                   h=mid-1;
                 
 
