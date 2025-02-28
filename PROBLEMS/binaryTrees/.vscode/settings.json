@@ -60,12 +60,6 @@
     "*.sqlbook": "sql",
     "*.ndjson": "jsonl",
     "*.dbclient-js": "javascript",
-    "*.tcc": "cpp",
-    "iostream": "cpp",
-    "ostream": "cpp",
-    "list": "cpp",
-    "array": "cpp",
-    "string": "cpp"
-  },
-  "liveServer.settings.port": 5501
+    "BFS.C": "cpp"
+  }
 }

@@ -760,6 +760,8 @@ Empty: Check if the priority queue is empty.*/
     maxHeap.push(20);
     maxHeap.push(5);
     maxHeap.push(30);
+    int var=maxHeap.top();
+    cout<<var<<":var";
 
     // Accessing elements
     cout << "Max-Heap Elements: ";
@@ -1071,7 +1073,7 @@ int main()
     //listDemo();
     //dequeDemo();
     //stackDemo();
-    //priorityQueueDemo();
+    priorityQueueDemo();
     //multisetDemo();
     //multimapDemo();
     //unordered_multimapDemo();

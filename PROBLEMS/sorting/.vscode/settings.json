@@ -55,17 +55,5 @@
   "C_Cpp_Runner.useLeakSanitizer": false,
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false,
-  "C_Cpp_Runner.msvcSecureNoWarnings": false,
-  "files.associations": {
-    "*.sqlbook": "sql",
-    "*.ndjson": "jsonl",
-    "*.dbclient-js": "javascript",
-    "*.tcc": "cpp",
-    "iostream": "cpp",
-    "ostream": "cpp",
-    "list": "cpp",
-    "array": "cpp",
-    "string": "cpp"
-  },
-  "liveServer.settings.port": 5501
+  "C_Cpp_Runner.msvcSecureNoWarnings": false
 }

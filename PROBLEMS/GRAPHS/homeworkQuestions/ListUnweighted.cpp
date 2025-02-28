@@ -23,6 +23,7 @@ void adjacencyListUndirected(int n, vector<pair<int, int>> &edges) {
 
 int main() {
     int n = 4;
+    
     vector<pair<int, int>> edges = {{0, 1}, {1, 2}, {2, 3}, {3, 0}};
     
     adjacencyListUndirected(n, edges);

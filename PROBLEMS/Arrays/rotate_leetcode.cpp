@@ -34,6 +34,7 @@ int main()
     for(int i=0;i<n;i++)
     {
         int value;
+        
         cin>>value;
         nums.emplace(nums.end(),value);
     }
