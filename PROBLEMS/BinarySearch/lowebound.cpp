@@ -22,10 +22,11 @@ int lowerBound(vector<int>arr,int value){
 }
 
 int main() {
-    vector<int> arr = {1,2,6,10};
+    vector<int> arr = {1,2,3,6,10};
     int value = 2;
-    int pos = lowerBound(arr, value);
-    cout<<pos;
+    auto pos = upper_bound(arr.begin(),arr.end(),value);
+    
+    cout<<arr.end()-pos;
     
     return 0;
 }

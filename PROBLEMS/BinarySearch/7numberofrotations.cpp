@@ -18,3 +18,21 @@ int main()
 
     return 0;
 }
+/*
+while(low<high)
+{
+    int mid=(low+high)/2;
+    if(v[mid]>v[low])
+    {
+        low=mid+1;
+    }
+    else
+    {
+        high=mid;
+    }
+
+}
+    return low;
+}
+
+*/

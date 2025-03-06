@@ -14,7 +14,7 @@ int findLAst(vector<int> v, int target)
         if(v[mid]==target)
         {
             ans=mid;
-            l=mid+1;
+            l=mid+1;//--> last position// h=mid-1;first position
             
         }   
         else if(v[mid]>target)
@@ -32,7 +32,7 @@ int findLAst(vector<int> v, int target)
 
 int main()
 {
-    vector<int> v={3,3,3,3,3,3,3,3,3,3};
+    vector<int> v={0,0,3,3,3,3,3,3,3,3};
     int t=3;
     int ans=findLAst(v,t);
     cout<<"answer="<<ans;

@@ -9,7 +9,7 @@ int upperBound(vector<int>arr,int value)
     while (left<=right) {
         int mid = (left + right) / 2;
         
-        if (arr[mid] > value) {
+        if (arr[mid] >= value) {
            
             right = mid - 1;
             ans=mid;

@@ -6,7 +6,8 @@ f searchInsert(self, nums, target):
             if(nums[mid]==target):
                 return mid
             elif nums[mid]<target:
+                l=mi
                 l=mid+1
             else:
-                h=mid-1
+                h=mid-1 
         return l
