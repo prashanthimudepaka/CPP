@@ -62,6 +62,10 @@ using namespace std;
         {
             return v[mid];
         }
+             //If mid is odd and v[mid] is equal to v[mid-1] or
+        //mid is even and v[mid] is equal to v[mid+1] then
+        //v[mid] is the single element.
+        
         if((mid%2!=0 && v[mid]==v[mid-1])||(mid%2==0 && v[mid]==v[mid+1]))
         {
                 l=mid+1;
