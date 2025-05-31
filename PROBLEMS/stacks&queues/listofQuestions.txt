@@ -1,0 +1,28 @@
+1. implement stack using arrays
+https://www.geeksforgeeks.org/problems/implement-stack-using-array/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=implement-stack-using-array
+2. queue using arrays
+https://www.geeksforgeeks.org/problems/implement-queue-using-array/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=implement-queue-using-array
+
+3. implement stack using queues
+https://leetcode.com/problems/implement-stack-using-queues/description/
+
+4. implement queue using stack
+https://leetcode.com/problems/implement-queue-using-stacks/description/
+
+5. valid paranthesis
+https://leetcode.com/problems/valid-parentheses/description/
+
+6. next greater element  
+https://leetcode.com/problems/next-greater-element-i/description/
+
+7. trapping-rain-water   *****
+https://leetcode.com/problems/trapping-rain-water/description/
+
+8.sliding-window-maximum 
+https://leetcode.com/problems/sliding-window-maximum/description/
+
+9. asteroid-collision
+https://leetcode.com/problems/asteroid-collision/description/
+
+10.sum-of-subarray-minimums
+https://leetcode.com/problems/sum-of-subarray-minimums/description/

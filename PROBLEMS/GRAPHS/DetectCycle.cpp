@@ -6,11 +6,13 @@
 //2) v = 8,  e = 6
 #include<bits/stdc++.h>  
 using namespace std;
+
 int Detect(vector<int> adjacency,)
+
 int main()
 {
     vector<int> adjacencyList[4]={{},{2},{1,3},{2}};
-   ok ok  bye
+  
     
     return 0;  
 }

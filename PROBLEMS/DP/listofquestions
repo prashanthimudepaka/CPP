@@ -1,0 +1,322 @@
+1) https://leetcode.com/problems/climbing-stairs/description/
+2) https://leetcode.com/problems/min-cost-climbing-stairs/description/
+
+3)https://leetcode.com/problems/house-robber/submissions/1642655128/
+ 
+class Solution {
+public:
+    int rob(vector<int>& nums) {
+        int n=nums.size();
+        vector<int> dp(n);
+        if( n==0) return 0;
+        if(nums.size()==1) return nums[0];
+        dp[0]=nums[0];
+        dp[1]=max(nums[0],nums[1]);
+       for(int i=2; i<n; i++ )
+       {
+            dp[i]=max(dp[i-1],dp[i-2]+nums[i]);
+       }
+       return dp[n-1];
+    }
+};
+
+4) https://leetcode.com/problems/house-robber-ii/solutions/1442044/python-bottom-up-dp-o-1-space-clean-concise
+
+5)https://leetcode.com/problems/palindromic-substrings/submissions/1644793367/
+
+class Solution {
+public:
+int count=1;
+    void isPalindrome(string s,int l,int r)
+    {
+        while(l>=0 && r<s.length() && s[l]==s[r])
+        {
+            count++;
+            l--;
+            r++;
+        }
+        
+    }
+     int countSubstrings(string s) {
+      int n=s.size(); 
+        if(n<1) return 0;
+        for(int i=0;i<n-1;i++){
+         isPalindrome(s,i,i);
+         isPalindrome(s,i,i+1);
+        }
+         return count;
+         }
+};
+ 
+class Solution {
+public:
+    int countSubstrings(string S) {
+        int ans = 0;
+        int n = S.length();
+        int i = 0;
+
+        while (i < n) {
+            int j = i - 1;
+            int k = i;
+
+            // Expand for consecutive identical characters
+            while (k < n - 1 && S[k] == S[k + 1]) {
+                k++;
+            }
+
+            // Count palindromic substrings within identical characters
+            int len = k - j;
+            ans += len * (len + 1) / 2;
+
+            // Move to the next non-repeating character
+            i = k + 1;
+            k = k + 1;
+
+            // Expand around the center to find palindromes
+            while (j >= 0 && k < n && S[j] == S[k]) {
+                ans++;
+                j--;
+                k++;
+            }
+        }
+
+        return ans;
+    }
+};
+
+
+6) https://leetcode.com/problems/longest-palindromic-substring/submissions/1644608576/
+
+7)https://leetcode.com/problems/decode-ways/ 
+
+8) https://leetcode.com/problems/coin-change/submissions/1645556539/
+
+9) https://leetcode.com/problems/maximum-product-subarray/submissions/1645588867/
+
+10)https://leetcode.com/problems/word-break/submissions/1649617113/
+
+class Solution {
+public:
+    bool wordBreak(string s, vector< string>& wordDict) {
+        unordered_set< string>us(wordDict.begin(),wordDict.end());
+        vector< bool>visited(s.length(),false);
+        queue< int>q;
+        q.push(0);
+        while(!q.empty()){
+            int start=q.front();
+            q.pop();
+            if(start==s.length()){
+                return true;
+            }
+            for(int i=start+1;i<=s.length();i++){
+                if(visited[i]==true){
+                    continue;
+                }
+                if(us.find(s.substr(start,i-start))!=us.end()){
+                    q.push(i);
+                    visited[i]=true;
+                }
+            }
+        }
+        return false;
+    }
+};
+
+
+11) https://leetcode.com/problems/longest-increasing-subsequence/submissions/1646918454/
+(with dp and binary search both)
+
+12) 
+https://leetcode.com/problems/partition-equal-subset-sum/solutions/6623686/0-1-knapsack-dp-with-images-example-walkthrough-c-python-java
+
+class Solution {
+public:
+  bool solve(int ind, int target, vector<int> &arr, vector<vector<int>> &dp)
+  {
+    if(target==0) return true;
+    if(ind==0) return (arr[ind]==target);
+    if(dp[ind][target]!=-1) return dp[ind][target];
+    bool nottake=solve(ind-1,target,arr,dp);
+    bool take=false;
+    if(arr[ind]<=target)
+    {
+        take=solve(ind-1, target-arr[ind],arr,dp);
+    }
+    return dp[ind][target]=take|nottake;
+
+  }
+    bool canPartition(vector<int>& nums) {
+        int totsum=0;
+        int n=nums.size();
+        
+        for(int i=0;i<n;i++)
+        {
+            totsum+=nums[i];
+        }
+        if(totsum%2!=0) return false;
+        int target=totsum/2;
+    vector<vector<int>> dp(n,vector<int>(target+1,-1));
+        if(solve(n-1,target,nums,dp))
+        {
+            return true;
+        }
+        return false;
+    }
+};
+
+
+2D :
+
+1) https://leetcode.com/problems/burst-balloons/
+2) https://leetcode.com/problems/longest-common-subsequence/
+
+3) 0/1 KNAPSACK 
+https://leetcode.com/problems/painting-the-walls/submissions/1649638099/
+
+ALL 4 WAYS:
+All 4 ways from recursion - > top down -> bottom up -> varibale approch
+
+class Solution {
+    
+    //recursion tle
+    int solve(int W, vector<int> &val, vector<int> &wt, int index){
+        
+        if(index == 0){
+            if(wt[0] <= W){
+                return val[0];
+            }else{
+                return 0;
+            }
+        }
+        
+        int exc = solve(W,val,wt,index-1);
+        
+        int inc = 0; 
+        if(wt[index] <= W){
+            inc  = val[index] + solve(W-wt[index],val,wt,index-1);
+        }
+        
+        return max(inc,exc);
+    }
+    
+    //dp top down
+    int solvedp(int W, vector<int> &val, vector<int> &wt, int index, vector<vector<int>>& dp ){
+        
+        if(index == 0){
+            if(wt[0] <= W){
+                return val[0];
+            }else{
+                return 0;
+            }
+        }
+        
+        if( dp[index][W] != -1)
+        {
+            return  dp[index][W];
+        }
+        
+        
+        
+        int exc = solvedp(W,val,wt,index-1,dp);
+        
+        int inc = 0; 
+        if(wt[index] <= W){
+            inc  = val[index] + solvedp(W-wt[index],val,wt,index-1,dp);
+        }
+        
+        dp[index][W] =  max(inc,exc);
+        
+        return dp[index][W];
+    }
+    
+    //tabulation bottom up 
+    int solvetabulation(int W, vector<int> &val, vector<int> &wt, int index) {
+        int n = wt.size();
+        vector<vector<int>> dp(n, vector<int>(W + 1, 0));
+
+        // Base case: when only the 0th item is considered
+        for (int w = 0; w <= W; w++) {
+            if (wt[0] <= w) {
+                dp[0][w] = val[0];
+            } else {
+                dp[0][w] = 0;
+            }
+        }
+
+        for (int i = 1; i < n; i++) {
+            for (int w = 0; w <= W; w++) {
+                int exc = dp[i - 1][w];  
+                int inc = 0;
+
+                if (wt[i] <= w) {
+                    inc = val[i] + dp[i - 1][w - wt[i]];  
+                }
+
+                dp[i][w] = max(inc, exc);
+            }
+        }
+
+        return dp[n - 1][W];
+    }
+    
+     // variable 
+    int solvevariable(int W, vector<int> &val, vector<int> &wt, int index) {
+        int n = wt.size();
+     
+       vector<int> prev(W+1,0);
+       vector<int> curr(W+1,0);
+
+        // Base case: when only the 0th item is considered
+        for (int w = 0; w <= W; w++) {
+            if (wt[0] <= w) {
+               prev[w] = val[0];
+            } else {
+                prev[w] = 0;
+            }
+        }
+
+        for (int i = 1; i < n; i++) {
+            for (int w = 0; w <= W; w++) {
+                int exc = prev[w];  
+                int inc = 0;
+
+                if (wt[i] <= w) {
+                    inc = val[i] + prev[w - wt[i]];  
+                }
+
+                curr[w] = max(inc, exc);
+            }
+            prev = curr;
+        }
+
+        return prev[W];
+    }
+    
+  public:
+    int knapsack(int W, vector<int> &val, vector<int> &wt) {
+ //     vector<vector<int>> dp(wt.size() , vector<int>(W+1,-1));
+      return solvevariable(W,val,wt,wt.size()-1);
+    }
+};
+
+
+4) https://leetcode.com/problems/target-sum/
+5) coin change -2 
+class Solution:
+    def change(self, amount: int, coins: List[int]) -> int:
+        dp=[0]*(amount+1)
+        dp[0]=1
+        for coin in coins:
+            for i in range(coin,amount+1):
+                dp[i]+=dp[i-coin]
+
+        return dp[amount]
+
+6) https://leetcode.com/problems/edit-distance/solutions/25989/my-dp-solution-in-c-with-comments/
+
+7) https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/solutions/516864/c-finite-state-solution-faster-than-100-in-time-detailed-explanation/
+
+8) https://leetcode.com/problems/distinct-subsequences/solutions/6208468/beats-100-solution-5-approaches-recursive-memoization-tabulation-space-optimization
+
+
+
